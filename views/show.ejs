@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='../style.css' rel='stylesheet' type='text/css'>
+    <title>Player Details & Stats</title>
+</head>
+<body>
+   <h1>Player Details & Stats</h1> 
+   <h3><%=player.name%></h3>
+   <p># <%=player.number%></p>
+   <p><%=player.position%></p>
+
+   
+       <form action='/players' method='POST'>
+           Free Throws: <input type='text' name='Free Throws' /><br />
+           Two-Point Shots: <input type='text' name='Two-Point Shots' /><br />
+           Three-Point Shots: <input type='text' name='Three-Point Shots' /><br />
+           Assists: <input type='text' name='Assists' /><br />
+           <input type='submit' value='Add New Stats' />
+    </form>
+
+    <table>
+        Free Throws
+        Two-Point Shots
+        Three-Point Shots
+        Assists
+    </table>
+    <br></br>
+    <a href = '/players'>Back to Player Page</a> <br />
+    <br></br>
+    <a href = '/players/<%=player.id%>/edit'>Edit This Player</a>
+    <br></br>
+    <a href = '/players/<%=player.id%>/delete'>Delete This Player</a>
+
+</body>
+</html>
