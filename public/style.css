@@ -14,23 +14,26 @@ ul {
     font-size: 30px;
 }
 
-table, th, td {
-    border: 1px solid black;
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: darkgrey;
+    overflow-x: hidden;
 }
-table {
-    width: 100%;
+.sidenav a {
+    color: white;
+    padding: 16px;
+    display: block;
 }
-th {
-    height: 50px;
+.sidenav a:hover {
+    background-color: darkgreen;
+    color: black;
 }
-td {
-    text-align: center;
-}
-th, td {
-    padding: 5px;
-    border-bottom: 1px solid black;
-}
-tr:hover {background-color: yellow;}
-img {
-    padding: 100px;
+.content {
+    margin-left: 200px;
+    padding-left: 20px;
 }

@@ -6,7 +6,7 @@ module.exports = [{
     rebound: 14,
     assist: 8,
     steal: 4,
-    mvp: 'Bailey'
+    
 }, {
     game: 'Game Two',
     twoPoint: 26,
@@ -15,7 +15,7 @@ module.exports = [{
     rebound: 10,
     assist: 6,
     steal: 2,
-    mvp: 'Karson'
+    
 }, {
 
     game: 'Game Three',
@@ -25,7 +25,6 @@ module.exports = [{
     rebound: 16,
     assist: 10,
     steal: 6,
-    mvp: 'Kelsey'
     
     
 },
