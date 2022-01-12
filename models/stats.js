@@ -9,6 +9,7 @@ const statSchema = new Schema({
     rebound: { type: Number, required: true },
     assist: { type: Number, required: true },
     steal: { type: Number, required: true },
+    mvp: { type: String, required: true },
     
 });
 

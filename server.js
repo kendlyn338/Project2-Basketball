@@ -54,6 +54,12 @@ app.get('/stats', (req, res) => {
 app.get('/stats/new', (req, res) => {
     res.render('new.ejs');
 });
+// DELETE
+app.delete('/stats/:id', (req, res) => {
+    Stat.findByIdAndDelete (req.params.id, (err, data) => {
+        res.redirect('/stats')
+    });
+});
 // UPDATE
 app.put('/stats/:id/', (req, res) => {
     Stat.findByIdAndUpdate(

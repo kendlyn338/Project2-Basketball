@@ -1,7 +1,8 @@
 body {
     text-align: center;
     background-color: lightgreen;
-}
+}   
+
 h1 {
     text-align: center;
     font-family: fantasy;
@@ -9,10 +10,21 @@ h1 {
 h3 {
     text-align: center;
     font-size: 40px;
+   
 }
 ul {
     font-size: 30px;
 }
+.center {
+    background-color: lightgray;
+    width: 200px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 150px;
+    display: inline-table;
+    justify-content: center;
+}
+
 
 .sidenav {
     height: 100%;
