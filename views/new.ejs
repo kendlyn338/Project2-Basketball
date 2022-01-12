@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href='../style.css' rel='stylesheet' type='text/css'>
     <title>New Stats</title>
 </head>
 <body>
-    <form action='/players' method='POST'>
-        Free Throws: <input type='text' name='Free Throws' /><br />
-        Two-Point Shots: <input type='text' name='Two-Point Shots' /><br />
-        Three-Point Shots: <input type='text' name='Three-Point Shots' /><br />
-        Assists: <input type='text' name='Assists' /><br />
+    <h1>New Game Stats</h1>
+    <form action='/stats' method='POST'>
+        <input placeholder='Game' type='text' name='game' /><br />
+        <input placeholder='Two Point Shots' type='number' name='twoPoint' /><br />
+        <input placeholder='Three Point Shots' type='number' name='threePoint' /><br />
+        <input placeholder='Free Throws' type='number' name='freeThrow' /><br />
+        <input placeholder='Rebounds' type='number' name='rebound' /><br />
+        <input placeholder='Assists' type='number' name='assist' /><br />
+        <input placeholder='Steals' type='number' name='steal' /><br />
+        
         <input type='submit' value='Add New Stats' />
- </form>
+        
+    </form>
 
 </body>
 </html>

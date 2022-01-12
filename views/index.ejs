@@ -7,24 +7,36 @@
     <link href='../style.css' rel='stylesheet' type='text/css'>
     <title>Varsity Lady Pirates</title>
 </head>
+
 <body>
     <a href='https://www.maxpreps.com/high-schools/napoleon-pirates-(napoleon,mi)/girls-basketball/schedule.htm'>2021-2022 Game Schedule</a>
-    <h1>Varsity Lady Pirates</h1>
-    <ul>
-        <% player.forEach(player => { %>
-        <li>
-                <a href = '/players/<%=player._id %>'>
-                    <%=player.name %>
+     <h1>Varsity Lady Pirates</h1>
+  
+        <% stat.forEach(stat => { %>
+            <li>
+                <a href = '/stats/<%=stat._id %>'>
+                    <%= stat.game %>
                 </a>
-                <p># <%= player.number %> </p>
-                <p><%= player.position %> </p>
-        </li>
-         <% }) %>
-    </ul>
+                <p>Two Point Shots  <%= stat.twoPoint %> </p>
+                <p>Three Point Shots  <%= stat.threePoint %> </p>
+                <p>Free Throws  <%= stat.freeThrow %> </p>
+                <p>Rebounds  <%= stat.rebound %></p>
+                <p>Assists  <%= stat.assist %></p>
+                <p>Steals  <%= stat.steal %></p>
+                <p>Game MVP  <%= stat.mvp %></p>
+            </li>
+    <% }) %>
 
-    <img src = 'https://static.hudl.com/users/temp/4745059_999347ee02f4478ba1603d9c6e904a26.jpg' width='250' height='250' alt='Napoleon Basketball'>
+         <br></br>
 
-<a href='https://www.maxpreps.com/high-schools/napoleon-pirates-(napoleon,mi)/girls-basketball/schedule.htm'>2021-2022 Game Schedule</a>
+         <a href = '/stats/new'>Add Game Four Stats</a> <br /> 
+         <a href = '/stats/new'>Add Game Five Stats</a> <br />  
+         <a href = '/stats/new'>Add Game Six Stats</a> <br />     
+    
+
+<img src = 'https://static.hudl.com/users/temp/4745059_999347ee02f4478ba1603d9c6e904a26.jpg' width='250' height='250' alt='Napoleon Basketball'>
+
+
 
 </body>
 </html>

@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='../style.css' rel='stylesheet' type='text/css'>
     <title>Document</title>
 </head>
 <body>
-    
-</body>
+    <h1>Edit Stats</h1>
+    <form action='/stats/<%=stat._id %>?_method=PUT' method='POST'>
+        Game: <input type="text" name="game" value="<%=stat.game%>" /><br />
+        Two Point: <input type="text" name="two point" value="<%=stat.twoPoint%>" /><br />
+        Three Point: <input type="text" name="three point" value="<%=stat.threePoint%>" /><br />
+        Free Throws: <input type="text" name="free throws" value="<%=stat.freeThrow%>" /><br />
+        Rebounds: <input type="text" name="rebound" value="<%=stat.rebound%>" /><br />
+        Assists: <input type="text" name="assist" value="<%=stat.assist%>" /><br />
+        Steals: <input type="text" name="steal" value="<%=stat.steal%>" /><br />
+        <br />
+        <input type="submit" value="Submit Updated Stats" />
+        
+      </form>
+  
+      <a href = '/stats'>Back to Main Page</a> <br />
+      
+
+   </body>
 </html>

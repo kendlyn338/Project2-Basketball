@@ -1,6 +1,6 @@
 body {
-    background-color: orange;
     text-align: center;
+    background-color: lightgreen;
 }
 h1 {
     text-align: center;
@@ -12,4 +12,25 @@ h3 {
 }
 ul {
     font-size: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+table {
+    width: 100%;
+}
+th {
+    height: 50px;
+}
+td {
+    text-align: center;
+}
+th, td {
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+tr:hover {background-color: yellow;}
+img {
+    padding: 100px;
 }

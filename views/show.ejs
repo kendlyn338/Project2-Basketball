@@ -8,32 +8,47 @@
     <title>Player Details & Stats</title>
 </head>
 <body>
-   <h1>Player Details & Stats</h1> 
-   <h3><%=player.name%></h3>
-   <p># <%=player.number%></p>
-   <p><%=player.position%></p>
 
+
+    <h1>Game Stats</h1>
+    <% console.log(stat) %>
+    <h3><%=stat.game %></h3>
+    
+    <h5>Two Point</h5>
+    <p><%=stat.twoPoint %></p>
+    <h5>Three Point</h5>
+    <p><%=stat.threePoint %></p>
+    <h5>Free Throws</h5>
+    <p><%=stat.freeThrow %></p>
+    <h5>Rebound</h5>
+    <p><%=stat.rebound %></p>
+    <h5>Assists</h5>
+    <p><%=stat.assist %></p>
+    <h5>Steals</h5>
+    <p><%=stat.steal %></p>
+    <h5>Game MVP</h5>
+    <p><%=stat.mvp %></p>
+    
+
+  
    
-       <form action='/players' method='POST'>
-           Free Throws: <input type='text' name='Free Throws' /><br />
-           Two-Point Shots: <input type='text' name='Two-Point Shots' /><br />
-           Three-Point Shots: <input type='text' name='Three-Point Shots' /><br />
-           Assists: <input type='text' name='Assists' /><br />
-           <input type='submit' value='Add New Stats' />
-    </form>
+   
+   
+   <a href = '/stats'>Back to Main Page</a> <br />
+   <a href = '/stats/new'>Add New Stats</a> <br />
+   <a href = '/stats/<%=stat._id%>/edit'>Edit Stats</a> <br />
+       
+   
+   
+   
 
-    <table>
-        Free Throws
-        Two-Point Shots
-        Three-Point Shots
-        Assists
-    </table>
-    <br></br>
-    <a href = '/players'>Back to Player Page</a> <br />
-    <br></br>
-    <a href = '/players/<%=player.id%>/edit'>Edit This Player</a>
-    <br></br>
-    <a href = '/players/<%=player.id%>/delete'>Delete This Player</a>
 
+    
+    
+    
+    
+    
+<img src = 'http://files.planetofsuccess.com/blog/wp-content/uploads/2017/04/basketball5.jpg' width='300' height='400' alt='Michael Jordan Quote'>
+    <br></br>
 </body>
 </html>
