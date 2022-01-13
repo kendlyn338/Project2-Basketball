@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: lightgreen;
+    background-color: rgb(9, 136, 9);
 }   
 
 h1 {
@@ -26,7 +26,7 @@ ul {
 .center {
     background-color: lightgray;
     width: 200px;
-    border: 15px solid green;
+    border: 15px solid rgb(1, 16, 1);
     padding: 50px;
     margin: 150px;
     display: inline-table;
