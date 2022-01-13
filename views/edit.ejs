@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='../style.css' rel='stylesheet' type='text/css'>
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='/style.css' rel='stylesheet' type='text/css'>
+        
+                    
+        <title>Napoleon Varsity Lady Pirates</title>
+    </head>
 <body>
     <h1>Edit Stats</h1>
     <form action='/stats/<%=stat._id %>?_method=PUT' method='POST'>
@@ -17,12 +19,33 @@
         Rebounds: <input type="text" name="rebound" value="<%=stat.rebound%>" /><br />
         Assists: <input type="text" name="assist" value="<%=stat.assist%>" /><br />
         Steals: <input type="text" name="steal" value="<%=stat.steal%>" /><br />
+        Player of the Game: <input type="text" name="mvp" value="<%=stat.mvp%>" /><br />
+        Score: <input type="text" name="score" value="<%=stat.score%>" /><br />
+        
         <br />
         <input type="submit" value="Submit Updated Stats" />
         
       </form>
+      <div id='mySidenav' class='sidenav'>
+        <br></br>
+        <br></br>
+        <a href='/stats/new'>Add Game Four Stats</a> <br />
+        <a href='/stats/new'>Add Game Five Stats</a> <br />  
+        <a href='/stats/new'>Add Game Six Stats</a> <br />
+        <a href='/stats/new'>Add Game Seven Stats</a> <br />  
+        <a href='/stats/new'>Add Game Eight Stats</a> <br />  
+        <a href='/stats/new'>Add Game Nine Stats</a> <br />  
+        <a href='/stats/new'>Add Game Ten Stats</a> <br /> 
+        <br />
+        <a href='https://www.maxpreps.com/high-schools/napoleon-pirates-(napoleon,mi)/girls-basketball/schedule.htm'>2021-2022 Game Schedule</a>     
+        <a href='/index.html'>Meet Our Seniors</a> <br />
+        <a href='/index2.html'>Meet Our Team</a> <br />
+        <a href = '/stats'>Back to Main Page</a> <br />
+    
+    
+    </div>
   
-      <a href = '/stats'>Back to Main Page</a> <br />
+    
       
 
    </body>

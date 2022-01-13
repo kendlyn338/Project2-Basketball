@@ -7,6 +7,8 @@ module.exports = [{
     assist: 8,
     steal: 4,
     mvp: 'Bailey',
+    score: '58-72',
+    
     
 }, {
     game: 'Game Two',
@@ -16,7 +18,9 @@ module.exports = [{
     rebound: 10,
     assist: 6,
     steal: 2,
-    mvp: 'Kelsey',
+    mvp: 'Kelsea',
+    score: '74-59',
+    
     
 }, {
 
@@ -28,6 +32,8 @@ module.exports = [{
     assist: 10,
     steal: 6,
     mvp: 'Karson',
+    score: '47-55',
+    
     
     
 },

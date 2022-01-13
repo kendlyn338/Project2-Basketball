@@ -4,50 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='../style.css' rel='stylesheet' type='text/css'>
+    <link href='/style.css' rel='stylesheet' type='text/css'>
     <title>Player Details & Stats</title>
 </head>
 <body>
 
-
-    <h1>Game Stats</h1>
-    <% console.log(stat) %>
-    <h3><%=stat.game %></h3>
+    <div class='center'>
+        <h4><%=stat.game %></h4>
+        <p>Two Point Shots:  <%= stat.twoPoint %> </p>
+        <p>Three Point Shots:  <%= stat.threePoint %> </p>
+        <p>Free Throws:  <%= stat.freeThrow %> </p>
+        <p>Rebounds:  <%= stat.rebound %></p>
+        <p>Assists:  <%= stat.assist %></p>
+        <p>Steals:  <%= stat.steal %></p>
+       
+        <h2>Score:  <%=stat.score %></h2>
+        <form action="/stats/<%= stat.id %>?_method=DELETE" method="POST">
+            <input type="submit" value="DELETE" />
+          </form>  
+</div>
     
-    <h5>Two Point</h5>
-    <p><%=stat.twoPoint %></p>
-    <h5>Three Point</h5>
-    <p><%=stat.threePoint %></p>
-    <h5>Free Throws</h5>
-    <p><%=stat.freeThrow %></p>
-    <h5>Rebound</h5>
-    <p><%=stat.rebound %></p>
-    <h5>Assists</h5>
-    <p><%=stat.assist %></p>
-    <h5>Steals</h5>
-    <p><%=stat.steal %></p>
-    <h5>Game MVP</h5>
-    <p><%=stat.mvp %></p>
+<div class='bounce'>
+    <p>Player of the Game:  <%=stat.mvp %></p>
+     </div>
     
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
-  
-   
-   
-   
-   <a href = '/stats'>Back to Main Page</a> <br />
-   <a href = '/stats/<%=stat._id%>/edit'>Edit Stats</a> <br />
+    
+    
+<a href = '/stats/<%=stat._id%>/edit'>Edit Stats</a> <br />
+<br></br>
+<a href='/stats/new'>Add New Stats</a> <br /> 
+<br></br>
+<a href = '/stats'>Back to Main Page</a> <br />
+
+<div id='mySidenav' class='sidenav'>
+    <br></br>
+    <br></br>
+    <a href='/stats/new'>Add Game Four Stats</a> <br />
+    <a href='/stats/new'>Add Game Five Stats</a> <br />  
+    <a href='/stats/new'>Add Game Six Stats</a> <br />
+    <a href='/stats/new'>Add Game Seven Stats</a> <br />  
+    <a href='/stats/new'>Add Game Eight Stats</a> <br />  
+    <a href='/stats/new'>Add Game Nine Stats</a> <br />  
+    <a href='/stats/new'>Add Game Ten Stats</a> <br /> 
+    <br />
+    <a href='https://www.maxpreps.com/high-schools/napoleon-pirates-(napoleon,mi)/girls-basketball/schedule.htm'>2021-2022 Game Schedule</a>     
+    <a href='/index.html'>Meet Our Seniors</a> <br />
+    <a href='/index2.html'>Meet Our Team</a> <br />
+    <a href = '/stats'>Back to Main Page</a> <br />
+
+
+</div>
        
    
-   
-   
 
-
-    
-    
-    
-    
-    
-<img src = 'http://files.planetofsuccess.com/blog/wp-content/uploads/2017/04/basketball5.jpg' width='300' height='400' alt='Michael Jordan Quote'>
-    <br></br>
 </body>
 </html>

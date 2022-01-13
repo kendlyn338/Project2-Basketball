@@ -10,6 +10,8 @@ const statSchema = new Schema({
     assist: { type: Number, required: true },
     steal: { type: Number, required: true },
     mvp: { type: String, required: true },
+    score: { type: String, required: true },
+    
     
 });
 

@@ -72,7 +72,6 @@ app.put('/stats/:id/', (req, res) => {
 });
 // CREATE
 app.post('/stats', (req, res) => {
-    console.log(req.body)
     Stat.create(req.body, (err, createdStat) => {
         res.redirect('/stats');
        
