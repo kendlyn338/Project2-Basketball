@@ -20,16 +20,17 @@ https://www.maxpreps.com/high-schools/napoleon-pirates-(napoleon,mi)/girls-baske
 
 
 
-[Imgur](https://i.imgur.com/78VETOm.png)
+![Imgur](https://i.imgur.com/78VETOm.png)
 
-[Imgur](https://i.imgur.com/6cgKQBx.png)
+![Imgur](https://i.imgur.com/6cgKQBx.png)
 
-[Imgur](https://i.imgur.com/c3v0xsr.png)
+![Imgur](https://i.imgur.com/c3v0xsr.png)
 ## Technologies Used
-
-JavaScript, HTML and CSS
-
-NodeJS, Express
+*NodeJS 
+*Express
+*MongoDB
+*HTML5
+*CSS
 
 
 ## Future Enhancements
