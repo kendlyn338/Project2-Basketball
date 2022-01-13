@@ -6,9 +6,7 @@ This app allows user to view, edit and add game stats for the team. Also find hi
 
 ## Deployment
 
-To deploy this project run
-
-Heroku
+https://project2-basketball.herokuapp.com/stats
 
 
 
